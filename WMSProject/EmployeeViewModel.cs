@@ -11,6 +11,7 @@ namespace WMSProject
         public string Adoszam { get; } = "1234567-09-01";
 
         [ObservableProperty]
+        [NotifyPropertyChangedFor(nameof(RemainingDays))]
         private int szabadnapokSzama = 8;
 
         public int RemainingDays => VacationDay - SzabadnapokSzama;
