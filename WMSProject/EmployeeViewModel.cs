@@ -3,7 +3,7 @@ using System.Windows.Media;
 
 namespace WMSProject
 {
-    class EmployeeViewModel : ObservableObject
+    public partial class EmployeeViewModel : ObservableObject
     {
         private static int VacationDay = 45;
 
@@ -11,7 +11,7 @@ namespace WMSProject
         public string Adoszam { get; } = "1234567-09-01";
 
         [ObservableProperty]
-        private int szabadnapokSzama;
+        private int szabadnapokSzama = 8;
 
         public int RemainingDays => VacationDay - SzabadnapokSzama;
     }
