@@ -17,7 +17,7 @@
                 <Label>Adószám:</Label>
                 <TextBlock Text="{Binding Adoszam}"/>
                 <Label>Szabadnapok száma:</Label>
-                <TextBlock Text="{Binding SzabadnapokSzama}"/>
+                <TextBox Text="{Binding SzabadnapokSzama, UpdateSourceTrigger=PropertyChanged}"/>
                 <Label>Hátralévő szabadnapok száma:</Label>
                 <TextBlock Text="{Binding RemainingDays}"/>
             </StackPanel>
