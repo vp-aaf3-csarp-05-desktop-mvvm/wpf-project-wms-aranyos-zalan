@@ -18,6 +18,8 @@
                 <TextBlock Text="{Binding Adoszam}"/>
                 <Label>Szabadnapok száma:</Label>
                 <TextBlock Text="{Binding SzabadnapokSzama}"/>
+                <Label>Hátralévő szabadnapok száma:</Label>
+                <TextBlock Text="{Binding RemainingDays}"/>
             </StackPanel>
         </Border>
     </WrapPanel>

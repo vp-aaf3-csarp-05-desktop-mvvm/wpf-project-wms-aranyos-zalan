@@ -10,7 +10,8 @@ namespace WMSProject
         public string Name { get; } = "Nagy Anna";
         public string Adoszam { get; } = "1234567-09-01";
 
-        public int SzabadnapokSzama { get; set; } = 8;
+        [ObservableProperty]
+        private int szabadnapokSzama;
 
         public int RemainingDays => VacationDay - SzabadnapokSzama;
     }
